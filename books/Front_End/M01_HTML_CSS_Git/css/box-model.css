@@ -1,0 +1,20 @@
+
+/* Styling for the section */
+section {
+    width: 600px; /* Set the width of the section */
+    height: 600px; /* Set the height of the section */
+    text-align: center; /* Center-align text within the section */
+    border: 15px solid black; /* Add a black border around the section */
+    padding-top: 30px; /* Add top padding to the section */
+}
+
+/* Styling for images within the section */
+img {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Set the height of the images */
+    background-color: lightblue; /* Set a light blue background color for the images */
+    margin: 20px; /* Add margin around the images */
+    padding: 10px; /* Add padding inside the images */
+    border: 5px solid burlywood; /* Add a burlywood border around the images */
+}
+

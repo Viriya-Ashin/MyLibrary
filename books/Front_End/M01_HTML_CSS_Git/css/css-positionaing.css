@@ -1,0 +1,58 @@
+/* Reset default margin and padding for the body */
+body {
+    position: relative; /* Set body position to relative */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Add top padding to sections */
+section {
+    padding-top: 100px; /* Add top padding to sections */
+}
+
+/* Center-align headings */
+h1,
+h2,
+h3 {
+    text-align: center; /* Center-align headings */
+}
+
+/* Ensure images are displayed as block elements */
+img {
+    display: block; /* Set images to display as block */
+}
+
+/* Style for fixed header */
+header {
+    position: fixed; /* Fix header position */
+    top: 0; /* Position header at the top of the viewport */
+    z-index: 2; /* Set z-index to ensure header appears above other elements */
+    width: 100%; /* Set header width to full viewport width */
+    height: 100px; /* Set header height */
+}
+
+/* Style for article containers */
+.container {
+    width: 600px; /* Set container width */
+    height: 600px; /* Set container height */
+    margin: 20px auto; /* Center-align container and add margin */
+    border: 15px solid black; /* Add a black border to containers */
+}
+
+/* Style for absolute positioning container */
+.absolute-container {
+    position: relative; /* Set container position to relative */
+}
+
+/* Style for relative-box-2 with relative positioning */
+#relative-box-2 {
+    position: relative; /* Set position to relative */
+    left: 200px; /* Move element 200px to the right */
+}
+
+/* Style for absolute-box-2 with absolute positioning */
+#absolute-box-2 {
+    position: absolute; /* Set position to absolute */
+    top: 0%; /* Position at the top of the parent container */
+    left: 640px; /* Position 640px from the left of the parent container */
+}

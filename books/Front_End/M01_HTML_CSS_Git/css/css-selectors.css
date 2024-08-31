@@ -1,0 +1,34 @@
+/* Universal selector */
+*{
+    font-family: Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+/* Element selector */
+body {
+    background-color: antiquewhite;
+}
+
+/* Style for header and footer elements */
+header,
+footer {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: antiquewhite;
+    background-color: seagreen
+}
+
+/* Style for figure elements */
+figure {
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+/* Style for elements with the class "highlighted-text" */
+highlighted-text {
+    font-weight: bolder;
+}
+
+/* Style for the element with ID "contact-section" */
+#contact-section {
+    background-color: antiquewhite;
+}
