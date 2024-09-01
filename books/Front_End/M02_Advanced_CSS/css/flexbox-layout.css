@@ -1,0 +1,45 @@
+/* Apply box-sizing to all elements, ensuring padding and border are included in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+/* Base styles for the body element */
+body {
+  font-family: Arial; /* Set the font family for the body */
+  margin: 0; /* Remove default margin */
+}
+/* Styles for the main content container */
+main {
+  display: flex; /* Use flexbox for layout */
+  margin-top: 2%;  /* Add top margin */
+  flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
+}
+/* Styles for the main header */
+.main-header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between child elements */
+  padding: 60px; /* Add padding */
+  background: #13293d; /* Set background color */
+  color: #fff; /* Set text color */
+}
+/* Styles for the product cards */
+.card {
+  flex: 1 0 400px; /* Allow flex items to grow, not shrink, and set base width */
+  flex-wrap: wrap; /* Allow items within card to wrap */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center-align text */
+  border-style: solid; /* Set border style */
+  border-width: 1px; /* Set border width */
+}
+
+/* Styles for the headers within the product cards */
+.card header {
+  padding: 20px; /* Add padding */
+  background: #13293d; /* Set background color */
+  color: #fff;
+}
+/* Styles for the images within the product cards */
+.card img {
+  width: 100%; /* Make images responsive */
+  /* The client insists that images be at least 400px */
+  min-width: 400px;
+}
