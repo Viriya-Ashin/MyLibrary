@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the character encoding for the HTML document to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper scaling and rendering on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensure compatibility with the latest version of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Set the title of the HTML document -->
+    <title>Log Nums</title>
+    <!-- Link to Mocha CSS for styling the test results -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.css"
+    />
+    <!-- Include the Mocha JavaScript library for running tests -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.js"></script>
+    <!-- Include the Chai JavaScript library for assertions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Div element to display Mocha test results -->
+    <div id="mocha"></div>
+    <script>
+      // Set up Mocha to use the BDD (Behavior-Driven Development) interface
+      mocha.setup("bdd");
+    </script>
+    <!-- Include the JavaScript file containing the log-nums functions -->
+    <script src="log-nums.js"></script>
+        <!-- Include the JavaScript file containing the tests for the log-nums functions -->
+
+    <script src="js/03-log-nums.js"></script>
+    <script>
+      // Run the Mocha tests
+      mocha.run();
+    </script>
+  </body>
+</html>

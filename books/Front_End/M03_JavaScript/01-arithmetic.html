@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use the latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Document title -->
+    <title>Arithmetic Tests</title>
+    <!-- Link to Mocha CSS for test result styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.css"
+    />
+    <!-- Load Mocha testing framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.js"></script>
+    <!-- Load Chai assertion library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- Container for Mocha test results -->
+    <div id="mocha"></div>
+    <script>
+      // Configure Mocha to use BDD interface
+      mocha.setup("bdd");
+    </script>
+    <!-- Load the JavaScript file containing arithmetic functions -->
+    <script src="arithmetic.js"></script>
+    <!-- Load the JavaScript file containing tests for arithmetic functions -->
+    <script src="js/01-arithmetic.js"></script>
+    <script>
+      // Run the Mocha tests
+      mocha.run();
+    </script>
+  </body>
+</html>
