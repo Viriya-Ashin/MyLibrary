@@ -25,7 +25,7 @@ function generatePassword() {
   let includeSpecialCharacter; // Variable to determine if special characters should be included
 
   // Prompt the user to input the desired password length between 8 and 128 characters
-  passwordLength = parseInt(prompt("Mention a number from 8 to 128"));
+  passwordLength = parseInt(prompt("Write a number from 8 to 128"));
   
   // Confirm dialogs to ask the user whether to include different character types
   includeUpperCase = confirm("Include UpperCase?");
