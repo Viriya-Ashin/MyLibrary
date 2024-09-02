@@ -1,0 +1,29 @@
+/* Styles for the main content container */
+.container {
+    margin: auto; /* Center the container horizontally */
+    width: 100%; /* Take up the full width of the parent element */
+    height: 100px; /* Set a fixed height for the container */
+    text-align: center; /* Center-align text content within the container */
+  }
+  
+  /* Styles for the welcome heading */
+  .welcome {
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  /* Styles for the main content paragraph */
+  #main {
+    margin-bottom: 20px; /* Add space below the main content */
+    font-size: 100px; /* Set a large font size for the main content */
+    width: 100%; /* Take up the full width of the parent element */
+    height: 25px; /* Set a fixed height for the main content */
+  }
+  
+  /* Styles for the read button */
+  #read {
+    margin: auto; /* Center the button horizontally */
+    padding: 10px; /* Add padding around the button text */
+    width: 100%; /* Take up the full width of the parent element */
+    height: 25px; /* Set a fixed height for the button */
+  }
+  

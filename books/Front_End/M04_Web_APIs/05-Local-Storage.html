@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use the latest rendering engine for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./css/05-Local-Storage.css" />
+    <!-- Title of the webpage -->
+    <title>Auth Form</title>
+  </head>
+  <body>
+    <!-- Container to clear floats and hold the card -->
+    <div class="clearfix">
+      <!-- Card element containing the sign-up form -->
+      <div class="card">
+        <!-- Form heading -->
+        <h2>Sign Up</h2>
+        <!-- Form element with POST method -->
+        <form method="POST">
+          <!-- Input group for first name -->
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Jane" />
+          </div>
+          <!-- Input group for last name -->
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Doe" />
+          </div>
+          <!-- Input group for email -->
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="janedoe@mail.com" />
+          </div>
+          <!-- Input group for password -->
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="supersecure123" />
+          </div>
+          <!-- Placeholder for message display -->
+          <div id="msg"></div>
+          <!-- Submit button for the form -->
+          <button id="sign-up">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="./js/05-Local-Storage.js"></script>
+  </body>
+</html>

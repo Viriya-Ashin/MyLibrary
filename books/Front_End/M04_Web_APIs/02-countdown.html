@@ -1,0 +1,46 @@
+<!--
+  HTML Setup for Countdown Application Testing
+
+  - Includes necessary meta tags for character encoding, viewport settings, and compatibility.
+  - Sets the title of the webpage to "Countdown".
+  - Links to Mocha CSS for test result styling.
+  - Includes Mocha and Chai JavaScript libraries for testing functionality.
+  - Configures Mocha for Behavior-Driven Development (BDD) and runs tests.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Use the latest rendering engine for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title of the webpage -->
+    <title>Countdown</title>
+    <!-- Link to Mocha CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.css"
+    />
+    <!-- Mocha and Chai JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  </head>
+ 
+  <body>
+    <!-- Container for Mocha test results -->
+    <div id="mocha"></div>
+    <script>
+      <!-- Configure Mocha for Behavior-Driven Development (BDD) -->
+      mocha.setup("bdd");
+    </script>
+    <!-- Include JavaScript files for countdown functionality and tests -->
+    <script src="js/02-countdown.js"></script>
+    <script src="js/countdown.test.js"></script>
+    <!-- Run Mocha tests -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

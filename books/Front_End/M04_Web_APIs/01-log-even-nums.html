@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Use the latest rendering engine for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title of the webpage -->
+    <title>Log Even Nums</title>
+    <!-- Link to Mocha CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.css"
+    />
+    <!-- Mocha and Chai JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.0/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  </head>
+ 
+  <body>
+    <!-- Container for Mocha test results -->
+    <div id="mocha"></div>
+    <!-- Configure Mocha for Behavior-Driven Development (BDD) -->
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <!-- Include JavaScript files for testing -->
+    <script src="js/01-log-even-nums.js"></script>
+    <script src="js/log-even-nums.test.s"></script>
+    <!-- Run Mocha tests -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
