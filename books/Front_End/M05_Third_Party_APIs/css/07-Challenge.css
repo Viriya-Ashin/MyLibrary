@@ -1,0 +1,115 @@
+/* Universal selector to apply a base style for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Root selector for defining global CSS variables */
+  :root {
+    --main-font-family: 'Open Sans', sans-serif; /* Global font family */
+    --main-font-size: 16px; /* Global font size */
+    --main-line-height: 1; /* Global line height */
+    --main-color: #343030; /* Global text color */
+    --jumbotron-bg-color: transparent; /* Jumbotron background color */
+    --jumbotron-color: rgb(0, 0, 0); /* Jumbotron text color */
+    --jumbotron-border-bottom: 10px solid black; /* Jumbotron bottom border */
+    --time-block-border-radius: 15px; /* Border radius for time blocks */
+    --row-height: 80px; /* Height for each row */
+    --row-border-top: 1px solid white; /* Top border for each row */
+    --hour-bg-color: #ffffff; /* Background color for hour labels */
+    --hour-color: #000000; /* Text color for hour labels */
+    --hour-border-top: 1px dashed #000000; /* Top border for hour labels */
+    --past-bg-color: #d3d3d3; /* Background color for past time blocks */
+    --present-bg-color: #ff6961; /* Background color for present time blocks */
+    --future-bg-color: #77dd77; /* Background color for future time blocks */
+    --save-btn-bg-color: #06AED5; /* Background color for save buttons */
+    --save-btn-color: white; /* Text color for save buttons */
+    --save-btn-hover-font-size: 20px; /* Font size on hover for save button icon */
+    --save-btn-hover-transition: all .3s ease-in-out; /* Transition effect for save button icon */
+  }
+  
+  /* Apply global font settings */
+  body {
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+  }
+  
+  /* Styling for textarea elements */
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: var(--main-color);
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  /* Styling for jumbotron header */
+  .jumbotron {
+    text-align: center;
+    background-color: var(--jumbotron-bg-color);
+    color: var(--jumbotron-color);
+    border-radius: 0;
+    border-bottom: var(--jumbotron-border-bottom);
+  }
+  
+  /* Preserve whitespace for descriptions */
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  /* Styling for time blocks */
+  .time-block {
+    text-align: center;
+    border-radius: var(--time-block-border-radius);
+  }
+  
+  /* Styling for row elements */
+  .row {
+    white-space: pre-wrap;
+    height: var(--row-height);
+    border-top: var(--row-border-top);
+  }
+  
+  /* Styling for hour labels */
+  .hour {
+    background-color: var(--hour-bg-color);
+    color: var(--hour-color);
+    border-top: var(--hour-border-top);
+  }
+  
+  /* Background and text color for past time blocks */
+  .past {
+    background-color: var(--past-bg-color);
+    color: white;
+  }
+  
+  /* Background and text color for present time blocks */
+  .present {
+    background-color: var(--present-bg-color);
+    color: white;
+  }
+  
+  /* Background and text color for future time blocks */
+  .future {
+    background-color: var(--future-bg-color);
+    color: white;
+  }
+  
+  /* Styling for save buttons */
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: var(--time-block-border-radius);
+    border-bottom-right-radius: var(--time-block-border-radius);
+    background-color: var(--save-btn-bg-color);
+    color: var(--save-btn-color);
+  }
+  
+  /* Hover effect for save button icons */
+  .saveBtn i:hover {
+    font-size: var(--save-btn-hover-font-size);
+    transition: var(--save-btn-hover-transition);
+  }
+  
