@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title shown in the browser's tab -->
+    <title>Dynamically Generate Elements</title>
+    
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" href="./css/03-Demo-Dynamic.css" />
+  </head>
+
+  <body class="min-100-vh flex-column">
+    <!-- Flexbox layout for full viewport height and column arrangement -->
+    
+    <!-- Page header with padding, centered text, white text color, and primary background -->
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+    
+    <!-- Main content area with flexbox styling to center items horizontally and vertically -->
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+      
+      <!-- A card component styled with rounded corners and a white background -->
+      <section class="card card-rounded col-7 bg-white">
+        
+        <!-- Header section of the card with centered text and white text color -->
+        <header class="card-header text-center">
+          <h2 class="text-white">Dynamically Generated Elements</h2>
+        </header>
+        
+        <!-- Body of the card with centered text, padding, and a button -->
+        <div class="text-center p-4">
+          <p class="card-body">
+            <!-- Instructions for the user on what will happen when interacting with the page -->
+            Generate dynamic HTML to display the GitHub users' login and URL of
+            their GitHub profile.
+          </p>
+          
+          <!-- Button that will trigger the dynamic element generation -->
+          <button class="btn btn-danger" id="fetch-button">
+            Click Me
+          </button>
+        </div>
+        
+        <!-- Placeholder for dynamically generated content (GitHub users' login and URL) -->
+        <div class="flex-column" id="users"></div>
+        
+      </section>
+    </main>
+    
+    <!-- External JavaScript file that contains the logic for dynamic content generation -->
+    <script src="./js/03-Demo-Dynamic.js"></script>
+  </body>
+</html>

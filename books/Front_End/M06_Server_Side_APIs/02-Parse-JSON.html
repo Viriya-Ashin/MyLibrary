@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information about character encoding and viewport configuration for responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz with Timer</title>
-    <link rel="stylesheet" href="../../../css/quiz.css" />
+    
+    <!-- Page title displayed in the browser tab -->
+    <title>Parsing JSON</title>
+    
+    <!-- Link to external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" type="text/css" href="./css/02-Parse-JSON.css" />
   </head>
-  <body>
-    <div id="start-container">
-      <h2>Welcome to the Quiz!</h2>
-      <input
-        type="text"
-        id="username"
-        placeholder="Enter your name"
-        onfocus="clearPlaceholder(this)"
-      />
-      <button onclick="startQuiz()">Start Quiz</button>
-    </div>
-
-    <div class="quiz-container" id="quiz-container" style="display: none">
-      <div id="timer">Time Left: <span id="time">36</span> seconds</div>
-      <div id="question"></div>
-      <div class="options"></div>
-      <button id="next-question" onclick="checkAnswer()">Submit</button>
-      <div id="feedback"></div>
-    </div>
-
-    <div id="result-container" style="display: none">
-      <h2>Quiz Result</h2>
-      <div id="result"></div>
-      <button id="test-again" onclick="testAgain()">Test Again</button>
-    </div>
-
-    <!-- Store questions in a script tag with type="application/json" -->
-  <script id="questions-data" type="application/json">
-    [
-      {
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "Rome", "Madrid"],
-        "answer": "Paris"
-      },
-      {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Mars", "Earth", "Jupiter", "Saturn"],
-        "answer": "Mars"
-      },
-      {
-        "question": "What is the largest ocean on Earth?",
-        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        "answer": "Pacific Ocean"
-      }
-    ]
-  </script>
-    <script src="../../../js/quiz.js"></script>
+  
+  <body class="min-100-vh flex-column">
+    <!-- The body of the document uses a combination of utility classes for layout -->
+    
+    <!-- Header section with padding, text alignment, and background color styles -->
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+    
+    <!-- Main content area structured using flexbox utilities for responsive alignment and spacing -->
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+      <!-- Card component to display the main content, styled with rounded corners and a background color -->
+      <section class="card card-rounded col-7 bg-white">
+        
+        <!-- Card header with a centered heading and a background color -->
+        <header class="card-header text-center">
+          <h2 class="text-white">
+            Parsing JSON
+          </h2>
+        </header>
+        
+        <!-- Card body containing instructions for the task -->
+        <div class="p-3">
+          <p class="card-body">
+            <!-- Explanation of the request being made to the GitHub API to fetch issues from Twitter's Chill repository -->
+            Make a request to get 5 GitHub issues associated with Twitter's
+            Chill repo.
+            <br />
+            <!-- Instructions on logging the URL and user login from the response -->
+            Loop through the response and console log each issue's URL and
+            user's login.
+          </p>
+        </div>
+        
+        <!-- Footer of the card containing additional instructions for the user -->
+        <footer class="card-footer text-center">
+          Open the console in your browser to see the responses!
+        </footer>
+        
+      </section>
+    </main>
+    
+    <!-- External JavaScript file linked to provide functionality, e.g., making API requests -->
+    <script src="js/02-Parse-JSON.js"></script>
   </body>
 </html>

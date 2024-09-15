@@ -93,9 +93,10 @@ document.addEventListener("DOMContentLoaded", () => {
       M06_Server_Side_APIs: [
         "01-Create-Fetch.html",
         "02-Parse-JSON.html",
-        "03-CSS-Selectors.html",
-        "04-Box-Model.html",
-        "05-CSS-Positioning.html",
+        "03-Demo-Dynamic.html",
+        "04-Deconstruct-Parameters.html",
+        "05-Fetch-GitHub-Issues.html",
+        "single-repo.html",
         "06-Git-Guide.html",
         "07-Challenge.html",
         "08-Algorithms.html",
