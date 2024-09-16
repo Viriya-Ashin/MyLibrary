@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Quiz</title>
+  <link rel="stylesheet" href="css/11-Attribute-quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <!-- Question 1 -->
+      <div class="question" id="question-1">
+        <h3>Question 1: What background color is applied to the <code>section</code> element?</h3>
+        <div class="answer">
+          <input type="radio" name="q1" value="correct" id="q1-a"><label for="q1-a">rgb(226, 229, 217)</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1-b"><label for="q1-b">rgb(255, 255, 255)</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1-c"><label for="q1-c">rgb(0, 0, 0)</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(2)">Next</button>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="question-2" style="display: none;">
+        <h3>Question 2: What color is applied to the <code>header</code> element?</h3>
+        <div class="answer">
+          <input type="radio" name="q2" value="correct" id="q2-a"><label for="q2-a">rgb(39, 10, 201)</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2-b"><label for="q2-b">rgb(255, 0, 0)</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2-c"><label for="q2-c">rgb(0, 128, 0)</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(3)">Next</button>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="question-3" style="display: none;">
+        <h3>Question 3: What background color is applied to the <code>#email</code> list item?</h3>
+        <div class="answer">
+          <input type="radio" name="q3" value="correct" id="q3-a"><label for="q3-a">rgb(165, 147, 42)</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3-b"><label for="q3-b">rgb(255, 255, 255)</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3-c"><label for="q3-c">rgb(0, 0, 255)</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(4)">Next</button>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question" id="question-4" style="display: none;">
+        <h3>Question 4: What color is applied to the <code>#github</code> list item?</h3>
+        <div class="answer">
+          <input type="radio" name="q4" value="correct" id="q4-a"><label for="q4-a">yellowgreen</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4-b"><label for="q4-b">rgb(255, 0, 0)</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4-c"><label for="q4-c">rgb(0, 255, 255)</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(5)">Next</button>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question" id="question-5" style="display: none;">
+        <h3>Question 5: What background color is applied to the <code>#google</code> list item?</h3>
+        <div class="answer">
+          <input type="radio" name="q5" value="correct" id="q5-a"><label for="q5-a">rgb(204, 94, 50)</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5-b"><label for="q5-b">rgb(128, 128, 128)</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5-c"><label for="q5-c">rgb(0, 0, 0)</label><br>
+        </div>
+        <button class="next-btn" onclick="submitQuiz()">Submit Quiz</button>
+      </div>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h3>Quiz Result</h3>
+      <p id="score"></p>
+    </div>
+  </div>
+  <script src="js/11.Arrtibute-quiz.js"></script>
+</body>
+</html>

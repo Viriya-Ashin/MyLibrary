@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Quiz</title>
+  <link rel="stylesheet" href="css/12-CSS-Selectors-quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <!-- Question 1 -->
+      <div class="question" id="question-1">
+        <h3>Question 1: What does the CSS property <code>body { position: relative; }</code> do?</h3>
+        <div class="answer">
+          <input type="radio" name="q1" value="correct" id="q1-a"><label for="q1-a">Sets the body position relative to its normal position</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1-b"><label for="q1-b">Centers the body element horizontally</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1-c"><label for="q1-c">Fixes the body at the top of the viewport</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(2)">Next</button>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="question-2" style="display: none;">
+        <h3>Question 2: What effect does <code>section { padding-top: 100px; }</code> have on sections?</h3>
+        <div class="answer">
+          <input type="radio" name="q2" value="correct" id="q2-a"><label for="q2-a">Adds 100px of padding to the top of sections</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2-b"><label for="q2-b">Adds 100px of padding to all sides of sections</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2-c"><label for="q2-c">Moves sections 100px to the right</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(3)">Next</button>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="question-3" style="display: none;">
+        <h3>Question 3: What is the purpose of <code>header { position: fixed; }</code>?</h3>
+        <div class="answer">
+          <input type="radio" name="q3" value="correct" id="q3-a"><label for="q3-a">Keeps the header fixed at the top of the viewport</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3-b"><label for="q3-b">Centers the header horizontally on the page</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3-c"><label for="q3-c">Moves the header 100px down from the top</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(4)">Next</button>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question" id="question-4" style="display: none;">
+        <h3>Question 4: What does <code>.container { width: 600px; }</code> specify?</h3>
+        <div class="answer">
+          <input type="radio" name="q4" value="correct" id="q4-a"><label for="q4-a">Sets the width of the container to 600px</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4-b"><label for="q4-b">Sets the height of the container to 600px</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4-c"><label for="q4-c">Centers the container in the viewport</label><br>
+        </div>
+        <button class="next-btn" onclick="showNextQuestion(5)">Next</button>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question" id="question-5" style="display: none;">
+        <h3>Question 5: What is the effect of <code>#relative-box-2 { position: relative; left: 200px; }</code>?</h3>
+        <div class="answer">
+          <input type="radio" name="q5" value="correct" id="q5-a"><label for="q5-a">Moves the element 200px to the right relative to its normal position</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5-b"><label for="q5-b">Fixes the element at the top of the viewport</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5-c"><label for="q5-c">Moves the element 200px down from the top</label><br>
+        </div>
+        <button class="next-btn" onclick="submitQuiz()">Submit Quiz</button>
+      </div>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h3>Quiz Result</h3>
+      <p id="score"></p>
+    </div>
+  </div>
+  <script src="js/12-CSS-Selectors-quiz.js"></script>
+</body>
+</html>
