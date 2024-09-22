@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "12-Iteration-quiz.html",
         "13-Functions-quiz.html",
         "14-Scope-quiz.html",
+        "15-Object-This-quiz.html",
       ],
       M04_Web_APIs: [
         "01-Create-Append.html",
