@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "10-Flexbox-layout-quiz.html",
         "11-Responsive-Design-quiz.html",
         "12-Pseudo-Classes-quiz.html",
+        "13-CSS-Variables-quiz.html",
       ],
       M03_JavaScript: [
         "01-Conditional-Statements.html",
