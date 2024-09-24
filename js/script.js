@@ -105,6 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "10-Recordings.html",
         "11-Click-Events-Quiz.html",
         "12-Event-Delegation-Quiz.html",
+        "13-Bootstrap-Layout-Quiz.html",
+        "14-Bootstrap-Utilities-Quiz.html",
       ],
       M06_Server_Side_APIs: [
         "01-Create-Fetch.html",
