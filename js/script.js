@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "11-Create-Fetch-Quiz.html",
         "12-Parse-JSON-Quiz.html",
         "13-Demo-Dynamic-Quiz.html",
+        "14-Deconstruct-Parameters-Quiz.html",
       ],
       M07_Final_Project: [
         "projectName.html",
