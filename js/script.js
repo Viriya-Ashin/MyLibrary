@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "12-Event-Delegation-Quiz.html",
         "13-Bootstrap-Layout-Quiz.html",
         "14-Bootstrap-Utilities-Quiz.html",
+        "15-jQuery-UI-Quiz.html",
       ],
       M06_Server_Side_APIs: [
         "01-Create-Fetch.html",
