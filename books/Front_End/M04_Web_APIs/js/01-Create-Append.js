@@ -56,7 +56,7 @@ listEl.appendChild(li4);
 
 // Set styles for header element
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
-// Set styles for information container
+// Set styles forFrog & Toad Are Friends by Arnold Lobel information container
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 // Set source for the image element
 imgEl.setAttribute("src", "http://placekitten.com/200/300");
