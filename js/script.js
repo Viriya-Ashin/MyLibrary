@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "12-Event-Listeners-Quiz.html",
         "13-Timers-Intervals-Quiz.html",
         "14-Data-Attributes-Quiz.html",
+        "15-Local-Storage-Quiz.html",
       ],
       M05_Third_Party_APIs: [
         "01-Click-Events.html",
