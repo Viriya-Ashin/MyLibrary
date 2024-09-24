@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "09-Module-Project.html",
         "10-Recordings.html",
         "11-Create-Fetch-Quiz.html",
+        "12-Parse-JSON-Quiz.html",
       ],
       M07_Final_Project: [
         "projectName.html",
