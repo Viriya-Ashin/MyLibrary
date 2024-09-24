@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "09-Module-Project.html",
         "10-Recordings.html",
         "11-Create-Append-quiz.html",
+        "12-Event-Listeners-Quiz.html",
       ],
       M05_Third_Party_APIs: [
         "01-Click-Events.html",
