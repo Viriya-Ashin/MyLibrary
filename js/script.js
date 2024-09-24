@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "08-vowel-count.html",
         "09-Module-Project.html",
         "10-Recordings.html",
-        "11-Quiz.html",
+        "11-Click-Events-Quiz.html",
       ],
       M06_Server_Side_APIs: [
         "01-Create-Fetch.html",
