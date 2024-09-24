@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "08-title-case.html",
         "09-Module-Project.html",
         "10-Recordings.html",
-        "11-Quiz.html",
+        "11-Create-Fetch-Quiz.html",
       ],
       M07_Final_Project: [
         "projectName.html",
